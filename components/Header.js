@@ -11,7 +11,7 @@ const Header = () => {
           <Link href={"/"}>
             <div className="relative flex flex-col  pt-[4rem]">
               <Image
-                src={"/logo123.png"}
+                src={"/MarioGLogo.png"}
                 width={300}
                 height={100}
                 alt="Mario George logo"
