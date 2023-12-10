@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-export default function HomePage() {
+export default function FramerExample() {
   return (
     <>
       <motion.div
