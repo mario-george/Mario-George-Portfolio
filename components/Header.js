@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Socials from "@/components/Socials";
+import SocialLinks from "@/components/SocialLinks";
 
 const Header = () => {
   return (
@@ -20,14 +20,15 @@ const Header = () => {
                   mixBlendMode: "multiply", // Apply the blend mode
                   backgroundColor: "transparent", // Set background color to transparent
                 }}
-
                 className="opacity-85"
               />
-              <span className="w-full text-center font-bold text-2xl font-mono tracking-tighter text-accent ">Mario G. David</span>
+              <span className="w-full text-center font-bold text-2xl font-mono tracking-tighter text-accent ">
+                Mario G. David
+              </span>
             </div>
           </Link>
           {/* socials */}
-          <Socials />
+          <SocialLinks />
         </div>
       </div>
     </header>

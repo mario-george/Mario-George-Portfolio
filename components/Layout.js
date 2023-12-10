@@ -9,17 +9,17 @@ const opensans = Open_Sans({
 });
 
 // components import
-import Nav from "../components/Nav";
+import Navigation from "../components/Navigation";
 import StartImageLeftTop from "../components/StartImageLeftTop";
 import Header from "../components/Header";
 
 const Layout = ({ children }) => {
   return (
     <div
-      className={`page bg-site text-white bg-cover bg-no-repeat ${opensans.variable} font-opensans relative`}
+      className={`mainPage bg-site text-white bg-cover bg-no-repeat ${opensans.variable} font-opensans relative`}
     >
       <StartImageLeftTop />
-      <Nav />
+      <Navigation />
       <Header />
       {children}
     </div>
