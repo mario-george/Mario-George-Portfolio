@@ -3,8 +3,8 @@ import Image from "next/image";
 
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
-import ProjectsBtn from "../components/ProjectsButton";
-import MainAvatar from "../components/MainAvatar";
+import ProjectsBtn from "../components/ImagesComponents/ProjectsButton";
+import MainAvatar from "@/components/ImagesComponents/MainAvatar";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ import { fadeIn } from "../components/VariantsFramerMotion/VariantsObject";
 
 const Home = () => {
   return (
-    <div className="bg-primary/10 h-full relative">
+    <div className="bg-primary/60 h-full relative">
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* background image */}
