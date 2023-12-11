@@ -29,7 +29,7 @@ export const aboutData = [
         icons: [
           <SiNextdotjs key="nextdotjs" />,
           <FaReact key="react" />,
-          <SiTailwindcss />,
+          <SiTailwindcss key="tailwind" />,
 
           <FaHtml5 key="html5" />,
           <FaCss3 key="css3" />,
@@ -39,7 +39,7 @@ export const aboutData = [
       },
       {
         title: "Artificial Intelligence",
-        icons: [<FaPython key="python" />, <SiPytorch />],
+        icons: [<FaPython key="python" />, <SiPytorch key="pytorch"/>],
       },
     ],
   },
