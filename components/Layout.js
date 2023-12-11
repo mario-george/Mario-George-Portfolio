@@ -10,7 +10,7 @@ const opensans = Open_Sans({
 
 // components import
 import Navigation from "../components/Navigation";
-import StartImageLeftTop from "../components/StartImageLeftTop";
+import StartImageLeftTop from "@/components/ImagesComponents/StartImageLeftTop";
 import Header from "../components/Header";
 
 const Layout = ({ children }) => {
