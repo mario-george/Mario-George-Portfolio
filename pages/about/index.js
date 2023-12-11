@@ -39,7 +39,7 @@ export const aboutData = [
       },
       {
         title: "Artificial Intelligence",
-        icons: [<FaPython key="python" />, <SiPytorch key="pytorch"/>],
+        icons: [<FaPython key="python" />, <SiPytorch key="pytorch" />],
       },
     ],
   },
@@ -54,14 +54,13 @@ export const aboutData = [
         title: "The Ultimate Next.js 14+ Crash course Master Web Development",
         stage: "2021",
       },
-
     ],
   },
 ];
 
 //Components
-import MainAvatar from "@/components/MainAvatar";
-import Circles from "../../components/Circles";
+import MainAvatar from "@/components/ImagesComponents/MainAvatar";
+import Circles from "@/components/ImagesComponents/Circles";
 //Fromer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "@/components/VariantsFramerMotion/VariantsObject";
@@ -72,7 +71,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary/10 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       {/* avatar Img*/}
       <motion.div
