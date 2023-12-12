@@ -32,7 +32,16 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-      a captivating showcase of my passion for crafting exceptional websites. Each project here embodies not just design finesse but a dedication to weaving digital experiences that captivate, engage, and inspire. From sleek, responsive designs to seamless user interfaces, every creation is a testament to my commitment to bringing visions to life. Whether you seek a stunning portfolio, an intuitive e-commerce platform, or a dynamic corporate site, I infuse creativity, functionality, and innovation into every project. Dive into my portfolio and let's collaborate to transform your digital aspirations into awe-inspiring realities.
+              a captivating showcase of my passion for crafting exceptional
+              websites. Each project here embodies not just design finesse but a
+              dedication to weaving digital experiences that captivate, engage,
+              and inspire. From sleek, responsive designs to seamless user
+              interfaces, every creation is a testament to my commitment to
+              bringing visions to life. Whether you seek a stunning portfolio,
+              an intuitive e-commerce platform, or a dynamic corporate site, I
+              infuse creativity, functionality, and innovation into every
+              project. Dive into my portfolio and let's collaborate to transform
+              your digital aspirations into awe-inspiring realities.
             </motion.p>
           </div>
           {/* slider */}
