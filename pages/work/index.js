@@ -40,7 +40,7 @@ const Work = () => {
               bringing visions to life. Whether you seek a stunning portfolio,
               an intuitive e-commerce platform, or a dynamic corporate site, I
               infuse creativity, functionality, and innovation into every
-              project. Dive into my portfolio and let's collaborate to transform
+              project. Dive into my portfolio and let\'s collaborate to transform
               your digital aspirations into awe-inspiring realities.
             </motion.p>
           </div>

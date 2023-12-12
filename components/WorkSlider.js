@@ -89,7 +89,7 @@ const WorkSlider = () => {
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
-                  <Link  key={imageIndex} href={image.link} passHref legacyBehavior>
+                  <Link  key={index} href={image.link} passHref legacyBehavior>
                     <a
                       className="relative rounded-lg overflow-hidden flex items-center justify-center group noopener noreferrer"
                       key={index}
