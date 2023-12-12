@@ -9,7 +9,7 @@ import { fadeIn } from "@/components/VariantsFramerMotion/VariantsObject";
 
 const Services = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-full bg-primary/30 py-36 flex items-center h-screen ">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -31,10 +31,10 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-             Offers a full range of website creation services:
-              from design development to content writing and SEO settings. 
-              Taking into account all business needs and create websites that
-              attract customers and increase sales.
+              Offers a full range of website creation services: from design
+              development to content writing and SEO settings. Taking into
+              account all business needs and create websites that attract
+              customers and increase sales.
             </motion.p>
           </div>
 
