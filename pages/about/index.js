@@ -71,7 +71,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-screen bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       {/* avatar Img*/}
       <motion.div
@@ -79,7 +79,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[450px] w-[50%]"
+        className="hidden xl:flex absolute bottom-0 -left-[280px] w-[50%] h-[80%]"
       >
         <MainAvatar />
       </motion.div>
@@ -93,7 +93,7 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            A little <span className="text-accent">about us.</span>
+            A little <span className="text-accent">about me.</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
