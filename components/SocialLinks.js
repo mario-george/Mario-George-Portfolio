@@ -10,7 +10,7 @@ import {
 // social icons
 const SocialLinks = () => {
   return (
-    <div className="flex items-center transition-all duration-300 gap-x-6 text-2xl ">
+    <div className="flex items-center transition-all duration-300 gap-x-6 text-2xl  xl:pt-12">
       {/* 
           The rel="noopener noreferrer" attribute is a security measure that prevents
            the new page from being able to access the window object of the original page
