@@ -14,11 +14,11 @@ import { fadeIn } from "../components/VariantsFramerMotion/VariantsObject";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full relative">
+    <div className="bg-primary/60 h-screen flex flex-1 relative ">
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* background image */}
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge "></div>
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
@@ -56,7 +56,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Creation of websites that increase sales, improve customer interaction and increase brand awareness.
+            Creation of websites that increase sales, improve customer
+            interaction and increase brand awareness.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
