@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/components/VariantsFramerMotion/VariantsObject";
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="overflow-y-auto bg-primary/30 py-36 flex items-center">
       <Circles />
-      <div className="container mx-auto">
+      <div className="container mx-auto overflow-y-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* Text */}
           <div
@@ -33,15 +33,11 @@ const Work = () => {
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               a captivating showcase of my passion for crafting exceptional
-              websites. Each project here embodies not just design finesse but a
-              dedication to weaving digital experiences that captivate, engage,
-              and inspire. From sleek, responsive designs to seamless user
-              interfaces, every creation is a testament to my commitment to
-              bringing visions to life. Whether you seek a stunning portfolio,
-              an intuitive e-commerce platform, or a dynamic corporate site, I
-              infuse creativity, functionality, and innovation into every
-              project. Dive into my portfolio and lets collaborate to transform
-              your digital aspirations into awe-inspiring realities.
+              websites.From responsive designs to seamless user interfaces.
+              Whether you seek a stunning portfolio, an intuitive e-commerce
+              platform, or a dynamic corporate site, I integrate imagination,
+              practicality, and originality to ensure a blend of creativity and
+              functionality.
             </motion.p>
           </div>
           {/* slider */}
