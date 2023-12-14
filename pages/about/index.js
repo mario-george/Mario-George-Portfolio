@@ -71,7 +71,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-screen bg-primary/30 text-center xl:text-left  ">
+    <div className="h-screen bg-primary/30 text-center xl:text-left  py-36">
       <Circles />
       {/* avatar Img*/}
       <motion.div
