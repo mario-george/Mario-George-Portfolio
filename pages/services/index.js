@@ -9,7 +9,9 @@ import { fadeIn } from "@/components/VariantsFramerMotion/VariantsObject";
 
 const Services = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center h-screen ">
+    <div className="h-full bg-primary/30 py-36 flex items-center ">
+
+      
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
