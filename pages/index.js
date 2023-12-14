@@ -14,7 +14,7 @@ import { fadeIn } from "../components/VariantsFramerMotion/VariantsObject";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-screen flex flex-1 relative ">
+    <div className="bg-primary/60 h-screen flex flex-1 relative overflow-hidden ">
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* background image */}
