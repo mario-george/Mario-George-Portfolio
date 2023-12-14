@@ -38,15 +38,12 @@ export const workSlider = {
           path: "/projects/MeetupsNext.png",
           link: "https://meetups-next-red.vercel.app/",
         },
-        // {
-        //   title: "NARQA",
-        //   path: "/NARQA.jpg",
-        // },
         {
-          title: "Product Modal",
-          path: "/projects/productModal.png",
-          link: "https://product-modal-tailwind-css.vercel.app/ ",
+          title: "NARQA",
+          path: "/projects/narqa-logo.png",
+        link:"https://github.com/mario-george/NARS"
         },
+    
         {
           title: "Email Subscribe",
           path: "/projects/emailSubscribe.png",
@@ -102,7 +99,7 @@ const WorkSlider = () => {
                           src={image.path}
                           width={500}
                           height={300}
-                          className="max-w-[500px] max-h-[300px]"
+                          // className="max-w-[500px] max-h-[300px]"
                           alt=""
                         />
                         {/* overlay gradient */}
