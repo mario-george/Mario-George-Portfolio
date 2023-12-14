@@ -71,7 +71,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-screen bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-screen bg-primary/30 text-center xl:text-left  ">
       <Circles />
       {/* avatar Img*/}
       <motion.div
@@ -102,7 +102,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            {/* about us goes here */}
+            Respectful self-motivator gifted at finding reliable solutions for
+            software issues. Proficient in React and Next.js, adept at
+            leveraging TailwindCSS and Framer Motion to create dynamic user
+            interfaces. Well-versed in collaborating within cross-cultural,
+            global teams and fluent in English.{" "}
           </motion.p>
           {/* counters */}
           <motion.div
