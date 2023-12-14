@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "../components/VariantsFramerMotion/VariantsObject";
+import DownloadCV from "@/components/Buttons/DownloadCV";
+import PreviewCV from "@/components/Buttons/PreviewCV";
 
 const Home = () => {
   return (
@@ -62,7 +64,21 @@ const Home = () => {
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
+            <DownloadCV />
+            <PreviewCV />
           </div>
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden xl:flex gap-x-3"
+          >
+            <ProjectsBtn />
+            <DownloadCV />
+            <PreviewCV />
+
+          </motion.div>
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
@@ -70,7 +86,6 @@ const Home = () => {
             exit="hidden"
             className="hidden xl:flex"
           >
-            <ProjectsBtn />
           </motion.div>
         </div>
       </div>
