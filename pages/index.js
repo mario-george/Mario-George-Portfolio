@@ -16,7 +16,7 @@ import PreviewCV from "@/components/Buttons/PreviewCV";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-screen flex flex-1 relative overflow-hidden ">
+    <div className="bg-primary/60 h-screen flex flex-1 relative overflow-hidden py-36 ">
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* background image */}
@@ -62,10 +62,12 @@ const Home = () => {
             interaction and increase brand awareness.
           </motion.p>
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative flex-col">
             <ProjectsBtn />
-            <DownloadCV />
-            <PreviewCV />
+            <div className="flex gap-x-3">
+              <DownloadCV mob={true} />
+              <PreviewCV mob={true} />
+            </div>
           </div>
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -77,7 +79,6 @@ const Home = () => {
             <ProjectsBtn />
             <DownloadCV />
             <PreviewCV />
-
           </motion.div>
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -85,8 +86,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
             className="hidden xl:flex"
-          >
-          </motion.div>
+          ></motion.div>
         </div>
       </div>
     </div>
