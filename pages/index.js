@@ -16,7 +16,7 @@ import PreviewCV from "@/components/Buttons/PreviewCV";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-screen flex flex-1 relative overflow-hidden py-36 ">
+    <div className="bg-primary/60 min-h-screen xl:h-screen relative overflow-hidden  py-36 lg:py-0  ">
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* background image */}
@@ -80,13 +80,7 @@ const Home = () => {
             <DownloadCV />
             <PreviewCV />
           </motion.div>
-          <motion.div
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden xl:flex"
-          ></motion.div>
+ 
         </div>
       </div>
     </div>
