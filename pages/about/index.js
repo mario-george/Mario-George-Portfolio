@@ -102,11 +102,13 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Respectful self-motivator gifted at finding reliable solutions for
-            software issues. Proficient in React and Next.js, adept at
-            leveraging TailwindCSS and Framer Motion to create dynamic user
-            interfaces. Well-versed in collaborating within cross-cultural,
-            global teams and fluent in English.{" "}
+            Adaptable full-stack developer adept in MERN stack and Next.js,
+            experienced in MongoDB, Express, React, and Node.js. Skilled in
+            creating dynamic user interfaces with Tailwind CSS and Framer
+            Motion, dedicated to crafting engaging user experiences.
+            Collaborative team player with cross-cultural adaptability, fluent
+            in English, committed to delivering reliable solutions for intricate
+            software challenges.
           </motion.p>
           {/* counters */}
           <motion.div
