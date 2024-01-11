@@ -7,11 +7,11 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 // icons
+import { BsDatabaseFillCheck } from "react-icons/bs";
+
 import {
-  RxCrop,
   RxDesktop,
   RxPencil2,
-  RxReader,
   RxRocket,
   RxArrowTopRight,
 } from 'react-icons/rx';
@@ -23,17 +23,17 @@ import { FreeMode, Pagination } from 'swiper';
 export const serviceData = [
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Web development of any complexity using the most popular CMS',
+    title: 'MERN Stack',
+    description: 'Full-Stack developer adept in MERN stack and Next.js, experienced in MongoDB, Express, React, and Node.js.',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Prototyping and UI/UX design',
+    title: 'Front End',
+    description: 'Skilled in creating dynamic user interfaces with Tailwind CSS and Framer Motion',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
+    icon: <BsDatabaseFillCheck />,
+    title: 'Back End',
     description: 'Filing with content an information website, blog, online store-cards',
   },
   {
@@ -41,11 +41,7 @@ export const serviceData = [
     title: 'SEO',
     description: 'Promotion in search engines and Google',
   },
-  {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'We will form associations related to your company.',
-  },
+
 ];
 
 const ServiceSlider = () => {
