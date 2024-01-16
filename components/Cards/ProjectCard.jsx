@@ -14,7 +14,26 @@ import Button from '@mui/material/Button';
 
 export function ActionAreaCard({ path, title, demoLink, githubLink }) {
   return (
-    <></>
+    <Card>
+      <div className="relative ">
+        <CardMedia component="img" height="140" image={path} alt={title} />
+
+      
+        </div>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            description
+          </Typography>
+        </CardContent>
+        <CardActions>
+        <Button size="small">Frontend Repo</Button>
+        <Button size="small">Backend Repo</Button>
+        <Button size="small">Demo</Button>
+      </CardActions>
+    </Card>
   );
 }
 const ProjectCard = ({ ind, title, demoLink, githubLink, path }) => {
