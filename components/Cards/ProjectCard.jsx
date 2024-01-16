@@ -3,8 +3,20 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActions } from "@mui/material";
+import Link from "next/link";
+import { FaCode, FaEye } from "react-icons/fa6";
+import Button from '@mui/material/Button';
 
-
+export function ActionAreaCard({ path, title, demoLink, githubLink }) {
+  return (
+    <></>
+  );
+}
 const ProjectCard = ({ ind, title, demoLink, githubLink, path }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -30,7 +42,12 @@ const ProjectCard = ({ ind, title, demoLink, githubLink, path }) => {
       className="bg-white p-4 shadow-md rounded-md "
     >
 
-     
+      <ActionAreaCard
+        title={title}
+        path={path}
+        demoLink={demoLink}
+        githubLink={githubLink}
+      />
     </motion.div>
   );
 };
