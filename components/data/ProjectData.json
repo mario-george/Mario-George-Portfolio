@@ -1,0 +1,71 @@
+{
+  "slides": [
+    {
+      "images": [
+        {
+          "title": "Places Full Stack Website",
+          "path": "/projects/placesProject.png",
+          "demoLink": "https://places-project-front.vercel.app/",
+          "githubLink": "https://github.com/mario-george/places-project-front"
+        },
+        {
+          "title": "Meetups App with Next",
+          "path": "/projects/MeetupsNext.png",
+          "demoLink": "https://meetups-next-red.vercel.app/",
+          "githubLink": "https://github.com/mario-george/MeetupsNext.JS"
+        },
+        {
+          "title": "Ecommerce",
+          "path": "/projects/ecommerceCourses.png",
+          "demoLink": "https://ecommerce-courses-roan.vercel.app/",
+          "githubLink": "https://github.com/mario-george/Ecommerce-Courses"
+        },
+        {
+          "title": "Image gallery",
+          "path": "/projects/imageGallery.png",
+          "demoLink": "https://image-gallery-orcin-nine.vercel.app/",
+          "githubLink": "https://github.com/mario-george/Image-Gallery"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "title": "Pricing Cards",
+          "path": "/projects/pricingCards.png",
+          "demoLink": "https://pricing-cards.vercel.app/",
+          "githubLink": "https://github.com/mario-george/Pricing-Cards"
+        },
+        {
+          "title": "Product Modal",
+          "path": "/projects/productModal.png",
+          "demoLink": "https://product-modal-tailwind-css.vercel.app/",
+          "githubLink": "https://github.com/mario-george/product-modal-TailwindCSS"
+        },
+
+        {
+          "title": "Email Subscribe",
+          "path": "/projects/emailSubscribe.png",
+          "demoLink": "https://email-subscribe-ruddy.vercel.app/",
+          "githubLink": "https://github.com/mario-george/Email-Subscribe"
+        },
+        {
+          "title": "React Meal App",
+          "path": "/projects/reactMealApp.png",
+          "demoLink": "https://react-meal-app-nine.vercel.app/",
+          "githubLink": "https://github.com/mario-george/react-meal-app"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "title": "NARQA",
+          "path": "/projects/narqa-logo.png",
+          "demoLink": "https://github.com/mario-george/NARS",
+          "githubLink": "https://github.com/mario-george/NARS"
+        }
+      ]
+    }
+  ]
+}
