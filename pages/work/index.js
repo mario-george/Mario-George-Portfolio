@@ -7,18 +7,17 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/components/VariantsFramerMotion/VariantsObject";
 import ProjectCard from "../../components/Cards/ProjectCard";
 import ProjectData from "@/components/data/ProjectData";
-console.log(ProjectData.slides);
 const Work = () => {
   return (
     <>
       <div className=" bg-primary/30 py-36 flex items-center">
         <Circles />
         <div className="container mx-auto overflow-y-auto">
-          <div className="flex flex-col xl:flex-row gap-x-8">
+          <div className="flex flex-col xl:flex-row gap-x-8 mx-auto justify-center">
             {/* Text */}
             <div
-              className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 
-          xl:mb-0"
+              className="text-center justify-center flex xl:w-[30vw] mx-auto  flex-col lg:text-left mb-4 
+          xl:mb-0 "
             >
               <motion.h2
                 variants={fadeIn("up", 0.2)}
@@ -52,20 +51,48 @@ const Work = () => {
               exit="hidden"
               className="w-full xl:max-w-[65%]"
             >
-              <WorkSlider />
+              {/* will provide a way to change the order of the elements  */}
+              {/* <WorkSlider /> */}
             </motion.div>
           </div>
         </div>
         <Bulb />
       </div>
-      <div className="container mx-auto grid grid-cols-1  gap-4">
-        {ProjectData.slides.map((image) => {
-          return image.images.map((project, i) => {
-            const {githubLink, demoLink, title, path} = project;
-            return <ProjectCard ind={i} key={i} title={title} path={path} demoLink={demoLink} githubLink={githubLink} />;
-          });
-        })}
-       
+      <div className="bg-primary/30 py-20">
+        <div className="container mx-auto grid grid-cols-1  gap-4 ">
+          {ProjectData.slides.map((image) => {
+            return image.images.map((project, i) => {
+              const { githubLink, demoLink, title, path } = project;
+              return (
+                <ProjectCard
+                  ind={i}
+                  key={i}
+                  title={title}
+                  path={path}
+                  demoLink={demoLink}
+                  githubLink={githubLink}
+                />
+              );
+            });
+          })}
+          <ProjectCard
+            ind={100}
+            key={100}
+            title={"React Native Guess Number"}
+            path={"/projects/videos/react-native-guess-number.mp4"}
+            demoLink={"demoLink"}
+            githubLink={""}
+            video={true}
+          />  <ProjectCard
+          ind={100}
+          key={100}
+          title={"React Native Goal Tracker"}
+          path={"/projects/videos/react-native-goal-tracker.mp4"}
+          demoLink={"demoLink"}
+          githubLink={""}
+          video={true}
+        />
+        </div>
       </div>
     </>
   );
