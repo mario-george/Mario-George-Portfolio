@@ -12,35 +12,17 @@ import Link from "next/link";
 import { FaCode, FaEye } from "react-icons/fa6";
 import Button from "@mui/material/Button";
 
-export function ActionAreaCard({ path, title, demoLink, githubLink }) {
+export function ActionAreaCard({ path, title, demoLink, githubLink, video }) {
   return (
     <Card>
       <div className="relative ">
-        <CardMedia component="img" height="140" image={path} alt={title} />
+        {!video ? (
+          <CardMedia component="img" height="140" image={path} alt={title} />
+        ) : (
+          <CardMedia component="video" height="100" width='200' src={path} alt={title} className="max-w-[15rem] mx-auto z-100" allow="autoPlay" autoPlay controls muted />
+        )}
 
-        <div className="flex items-center justify-center tracking-[0.2em] space-x-12 group absolute inset-0 transition-all duration-300">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-gray-500 opacity-0 group-hover:opacity-10 duration-300 transition-all" />
-          <Link href={githubLink} passHref legacyBehavior>
-            <a className="noopener noreferrer" target="_blank">
-              <div className="relative text-4xl delay-100 translate-y-[1000%] group-hover:translate-y-0 duration-300 hover:scale-125 transition-all">
-                <div className="relative bg-black rounded-full w-[100%] h-[100%] px-6 py-6 z-1" />
-                <div className="absolute inset-0 transform translate-x-[6px] translate-y-[6px] z-30">
-                  <FaCode className="text-white" />
-                </div>
-              </div>
-            </a>
-          </Link>
-          <Link href={demoLink} passHref legacyBehavior>
-            <a className="noopener noreferrer" target="_blank">
-              <div className="rounded-full text-4xl translate-y-[1000%] group-hover:translate-y-0 transition-all delay-150 duration-300 hover:scale-125">
-                <div className="relative bg-black rounded-full w-[100%] h-[100%] px-6 py-6 z-1" />
-                <div className="absolute inset-0 transform translate-x-[6px] translate-y-[6px] z-30">
-                  <FaEye className="text-white" />
-                </div>
-              </div>
-            </a>
-          </Link>
-        </div>
+
       </div>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -58,7 +40,7 @@ export function ActionAreaCard({ path, title, demoLink, githubLink }) {
     </Card>
   );
 }
-const ProjectCard = ({ ind, title, demoLink, githubLink, path }) => {
+const ProjectCard = ({ ind, title, demoLink, githubLink, path, video }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   let dir = "-100%";
@@ -87,6 +69,7 @@ const ProjectCard = ({ ind, title, demoLink, githubLink, path }) => {
         path={path}
         demoLink={demoLink}
         githubLink={githubLink}
+        video={video}
       />
     </motion.div>
   );
