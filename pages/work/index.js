@@ -10,13 +10,13 @@ import ProjectData from "@/components/data/ProjectData";
 const Work = () => {
   return (
     <>
-      <div className=" bg-primary/30 py-36 flex items-center">
+      <div className=" bg-primary/30 py-36 flex items-center overflow-y-hidden">
         <Circles />
-        <div className="container mx-auto overflow-y-auto">
-          <div className="flex flex-col xl:flex-row gap-x-8 mx-auto justify-center">
+        <div className="container mx-auto overflow-y-hidden">
+          <div className="flex flex-col xl:flex-row gap-x-8 mx-auto justify-center overflow-y-hidden">
             {/* Text */}
             <div
-              className="text-center justify-center flex xl:w-[30vw] mx-auto  flex-col lg:text-left mb-4 
+              className="overflow-y-hidden text-center justify-center flex xl:w-[30vw] mx-auto  flex-col lg:text-left mb-4 
           xl:mb-0 "
             >
               <motion.h2
@@ -58,7 +58,7 @@ const Work = () => {
         </div>
         <Bulb />
       </div>
-      <div className="bg-primary/30 py-20">
+      <div className="bg-primary/30 py-20 overflow-hidden ">
         <div className="container mx-auto grid grid-cols-1  gap-4 ">
           {ProjectData.slides.map((image) => {
             return image.images.map((project, i) => {
@@ -83,15 +83,16 @@ const Work = () => {
             demoLink={"demoLink"}
             githubLink={""}
             video={true}
-          />  <ProjectCard
-          ind={100}
-          key={100}
-          title={"React Native Goal Tracker"}
-          path={"/projects/videos/react-native-goal-tracker.mp4"}
-          demoLink={"demoLink"}
-          githubLink={""}
-          video={true}
-        />
+          />{" "}
+          <ProjectCard
+            ind={100}
+            key={100}
+            title={"React Native Goal Tracker"}
+            path={"/projects/videos/react-native-goal-tracker.mp4"}
+            demoLink={"demoLink"}
+            githubLink={""}
+            video={true}
+          />
         </div>
       </div>
     </>
