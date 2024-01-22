@@ -19,10 +19,19 @@ export function ActionAreaCard({ path, title, demoLink, githubLink, video }) {
         {!video ? (
           <CardMedia component="img" height="140" image={path} alt={title} />
         ) : (
-          <CardMedia component="video" height="100" width='200' src={path} alt={title} className="max-w-[15rem] mx-auto z-100" allow="autoPlay" autoPlay controls muted />
+          <CardMedia
+            component="video"
+            height="100"
+            width="200"
+            src={path}
+            alt={title}
+            className="max-w-[15rem] mx-auto z-100"
+            allow="autoPlay"
+            autoPlay
+            controls
+            muted
+          />
         )}
-
-
       </div>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -33,9 +42,12 @@ export function ActionAreaCard({ path, title, demoLink, githubLink, video }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Frontend Repo</Button>
-        <Button size="small">Backend Repo</Button>
-        <Button size="small">Demo</Button>
+        <Button size="small" target="_blank" href={githubLink}>
+          Repository Link
+        </Button>
+    {  demoLink && <Button size="small" target="_blank" href={demoLink}>
+          Demo
+        </Button>}
       </CardActions>
     </Card>
   );
