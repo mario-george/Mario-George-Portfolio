@@ -80,17 +80,17 @@ const Work = () => {
             key={100}
             title={"React Native Guess Number"}
             path={"/projects/videos/react-native-guess-number.mp4"}
-            demoLink={"demoLink"}
-            githubLink={""}
+            demoLink={false}
+            githubLink={"https://github.com/mario-george/react-native-guess-number"}
             video={true}
           />{" "}
           <ProjectCard
-            ind={100}
-            key={100}
+            ind={101}
+            key={101}
             title={"React Native Goal Tracker"}
             path={"/projects/videos/react-native-goal-tracker.mp4"}
-            demoLink={"demoLink"}
-            githubLink={""}
+            demoLink={false}
+            githubLink={"https://github.com/mario-george/react-native-goals-tracker"}
             video={true}
           />
         </div>
